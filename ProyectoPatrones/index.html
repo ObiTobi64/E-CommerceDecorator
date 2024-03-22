@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce de Ropa</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="loga.ico">
+    
+</head>
+<body class="body">
+    
+    <div class="container">
+        <h1 class="title">E-commerce de Ropa</h1>
+    </div>
+    <div id="product-list">
+        <!-- Aquí se agregarán dinámicamente los productos -->
+    </div>
+
+    
+    <div class="product">
+        <img src="${this.imagen}" alt="${this.name}">
+        <div class="name">${this.name}</div>
+        <div class="price">$${this.price.toFixed(2)}</div>
+        <select class="size">
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+        </select>
+        <button class="add-to-cart">Agregar al carrito</button>
+    </div>
+    
+
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Pago Visa</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="loga.ico">
+</head>
+<body class="bodypage">
+
+    <h1 class="titlepago">Formulario de Pago Visa</h1>
+
+    <form id="payment-form">
+        <label for="card-number">Número de Tarjeta:</label>
+        <input type="text" id="card-number" placeholder="1234 5678 9012 3456" required>
+
+        <label for="card-expiry">Fecha de Expiración:</label>
+        <input type="text" id="card-expiry" placeholder="MM/AA" required>
+
+        <label for="card-cvc">CVC:</label>
+        <input type="text" id="card-cvc" placeholder="CVC" required>
+
+        <button type="submit">Pagar con Visa</button>
+    </form>
+
+    <script src="app.js"></script>
+</body>
+</html>
